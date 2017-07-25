@@ -54,7 +54,7 @@
 		- ExceptionInInitializerError
 		- StackOverflowError
 		- NoClassDefFoundError
-		- OutOfMemoryException
+		- OutOfMemoryError
 
 7. Finally
 	- If occur exception in the all code programming within the try block... compiler will to pass on finally
