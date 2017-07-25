@@ -65,7 +65,7 @@
 	- Throws is lancher of the method and throw is the inside the method
 
 	- Sample:
-		public void doIt() throws Exception, and so on {
+		- public void doIt() throws Exception, and so on {
 			throw new Exception("Threw error!");
 		}
 
