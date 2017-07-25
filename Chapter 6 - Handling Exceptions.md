@@ -6,18 +6,18 @@
 	subclass exception or no exception but cannot declare parent exception.
 
 2. Runtime exceptions are also known as unchecked exceptions.
-	They are allowed to be declared, but they don’t have to be. Checked exceptions must be handled or
+		They are allowed to be declared, but they don’t have to be. Checked exceptions must be handled or
 	declared. Legally, you can handle java.lang.Error subclasses, but it’s not a good idea
 
 3. Exceptions:
 
 	- java.io.IOException is thrown by many methods in the java.io package, but it is always thrown programmatically. 
 	The same is true for NumberFormatException; it is thrown programmatically by the wrapper classes of java.lang.
-	- 
+
 
 
 4. You cannot declare an checked exception which is never thrown in that context.
-    try {
+   - try {
         out.print(test());
     } catch (IOException io) {
 
@@ -57,14 +57,14 @@
 		- OutOfMemoryException
 
 7. Finally
-	If occur exception in the all code programming within the try block... compiler will to pass on finally
+	- If occur exception in the all code programming within the try block... compiler will to pass on finally
 	block code
-	If occur the exception or not in the try catch, finally always is called
+	- If occur the exception or not in the try catch, finally always is called
 
 8. Throws
-	Throws is lancher of the method and throw is the inside the method
+	- Throws is lancher of the method and throw is the inside the method
 
-	sample:
+	- Sample:
 		public void doIt() throws Exception, and so on {
 			throw new Exception("Threw error!");
 		}
