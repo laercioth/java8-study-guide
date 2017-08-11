@@ -56,3 +56,32 @@
 	constructor into the child class.
 	5. If the parent doesn’t have a no-argument constructor, the compiler requires an explicit
 	call to a parent constructor in each child constructor.
+
+
+8. Three faces of final
+
+	Final in variable its means the variable is GLOBAL or INSTANCE and it cannot be modified
+	Final in class its means the class cannot be extensible
+	Final in method its means the method cannot be override
+
+-- Tips.
+
+All of the static variables are defined in the class (with default values).  For example, the code public static String firstName = "Jason";  would result in the creation of the variable firstName  but in this step, it is assigned the default value of null (rather than the explicit value of "Jason").  This happens for all of the classes in the hierarchy (moving up the inheritance chain).
+
+All of the static initialization blocks and explicit values assigned to static variables (such as "Jason" above), are executed in the base class, in the order they are written (from top to bottom).  
+
+All of the static initialization blocks and explicit values assigned to static variables are executed for the immediate child of the base class, in the order they are written (from top to bottom).
+
+Step 3 is repeated all the way down the object hierarchy until the instantiated object type is reached.
+
+All of the instance variables are defined with default values, for all of the classes in the hierarchy (moving up the inheritance chain).
+
+All of the instance initialization blocks and explicit values assigned to instance variables are executed for the base class, in the order they are written (from top to bottom).  
+
+The constructor for the base class is executed.
+
+All of the instance initialization blocks and explicit values assigned to instance variables are executed for the immediate child of the base class, in the order they are written (from top to bottom),
+
+The constructor for the immediate child of the base class is executed.
+
+Steps 8 - 9 are repeated all the way down the object hierarchy until the instantiated object type is reached.
